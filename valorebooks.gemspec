@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'valorebooks/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "valorebooks"
+  spec.name          = "valorebooks-affiliate"
   spec.version       = Valorebooks::VERSION
   spec.authors       = ["Gilbert Pleczynski"]
   spec.email         = ["gpleczynski@belltowerbooks.com"]
