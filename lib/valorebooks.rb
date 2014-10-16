@@ -6,8 +6,8 @@ module Valorebooks
     API_URL = "http://prices.valorebooks.com/lookup-multiple-categories"
 
     def get_products(opts = {})
-      puts opts.merge!({SiteID: opts[:SiteID] || ENV["VALOREBOOKS_SITE_ID"]})
-      puts query_params = opts.map{ |k,v| "#{k}=#{v}"}
+      opts.merge!({SiteID: opts[:SiteID] || ENV["VALOREBOOKS_SITE_ID"]})
+      query_params = opts.map{ |k,v| "#{k}=#{v}"}
       url = "#{API_URL}?#{query_params.join("&")}"
 
       response = RestClient.get(url)
