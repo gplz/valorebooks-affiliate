@@ -14,8 +14,7 @@ module Valorebooks
       Response.new(response)
     end
   end
-
-require 'multixml'
+  
   class Response
     def initialize(body)
       @body = body
